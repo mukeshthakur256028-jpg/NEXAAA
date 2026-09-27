@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#243d32">
+  <meta name="description" content="Meet daygood: a considered collection of useful finds for your home, your routine, and everything in between. Explore our India storefront preview.">
+  <title>daygood. — Little things. Better everydays.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650;700;750&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#243d32;--text:#29372f;--muted:#73786e;--paper:#fbfbf7;--cream:#f1f2e9;--lime:#e1edb7;--line:#e3e5dc;--white:#fff;--radius:12px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:105px}
+    body{margin:0;font-family:"DM Sans",sans-serif;color:var(--text);background:var(--paper);font-size:15px;-webkit-font-smoothing:antialiased}
+    button,input,select,textarea{font:inherit}
+    button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}
+    button,a{touch-action:manipulation}
+    button{cursor:pointer}
+    button{color:inherit}
+    a{color:inherit;text-decoration:none}
+    button:disabled{cursor:not-allowed;opacity:.5}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    h1,h2,h3,p{margin:0}
+    button{border:0}
+    :focus-visible{outline:3px solid #839a58;outline-offset:4px}
+    ::selection{background:var(--lime);color:var(--ink)}
+    .container{width:min(1280px,calc(100% - 96px));margin-inline:auto}
+    .icon{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+    .icon-sm{width:17px;height:17px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:fixed;left:15px;top:-100px;padding:12px 20px;background:var(--ink);color:white;z-index:300}
+    .skip-link:focus{top:10px}
+    .announcement{background:var(--ink);color:#f7f9f1;height:33px;font-size:11px;letter-spacing:.3px}
+    .announcement .container{height:100%;display:flex;justify-content:space-between;align-items:center}
+    .announcement-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:9px}
+    .announcement .icon{width:13px;height:13px}
+    .country{display:flex;align-items:center;gap:7px}
+    .country-dot{width:6px;height:6px;background:var(--lime);border-radius:50%}
+    .site-header{position:sticky;top:0;z-index:40;background:rgba(251,251,247,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+    .header-inner{height:83px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .logo{display:inline-flex;align-items:center;gap:10px;color:var(--ink);font-size:32px;font-weight:750;letter-spacing:-1.8px;white-space:nowrap}
+    .brand-mark{width:31px;height:31px;flex-shrink:0}
+    .desktop-nav{display:flex;align-items:center;gap:31px;margin-left:54px}
+    .desktop-nav a{font-size:13px;font-weight:500;position:relative;padding:12px 0}
+    .desktop-nav a:after{content:"";position:absolute;bottom:5px;left:0;width:0;height:1px;background:var(--ink);transition:width .2s}
+    .desktop-nav a:hover:after{width:100%}
+    .nav-new{display:inline-block;margin-left:5px;font-size:9px;text-transform:uppercase;letter-spacing:.6px;padding:3px 5px;background:var(--lime);border-radius:3px;vertical-align:middle}
+    .header-actions{display:flex;align-items:center;gap:17px}
+    .icon-button{display:inline-flex;align-items:center;justify-content:center;min-width:39px;min-height:39px;padding:8px;background:transparent;border-radius:50%;transition:background .2s}
+    .icon-button:hover{background:#e9ece1}
+    .header-separator{width:1px;height:23px;background:var(--line)}
+    .bag-button{display:flex;align-items:center;gap:9px;background:transparent;padding:8px 0 8px 5px;font-size:13px}
+    .bag-count{display:grid;place-items:center;background:var(--ink);color:white;width:21px;height:21px;font-size:10px;border-radius:50%}
+    .mobile-menu-button{display:none}
+    .hero{padding:42px 0 44px}
+    .hero-grid{display:grid;grid-template-columns:1fr 1.08fr;align-items:center;gap:58px}
+    .eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+    .eyebrow-line{width:26px;height:1px;background:currentColor}
+    .hero h1{font-size:clamp(58px,5.55vw,80px);font-weight:600;line-height:1.035;letter-spacing:-4px;margin:25px 0 23px;color:var(--ink)}
+    .hero h1 em{font-family:"Instrument Serif",serif;font-weight:400;font-size:1.13em;letter-spacing:-2.5px}
+    .hero-copy>p{max-width:352px;font-size:15px;line-height:1.85;color:#72766d}
+    .hero-cta{display:flex;align-items:center;gap:25px;margin-top:29px}
+    .btn{min-height:47px;padding:13px 22px;display:inline-flex;align-items:center;justify-content:center;gap:15px;background:var(--ink);color:white;font-size:12px;font-weight:600;border:1px solid var(--ink);border-radius:5px;transition:background .2s,transform .2s;line-height:1.5}
+    .btn:hover{background:#355443;transform:translateY(-2px)}
+    .btn .icon{width:17px;height:17px}
+    .btn-outline{background:transparent;color:var(--ink);border-color:#cdd3c5}
+    .btn-outline:hover{background:#edf0e4}
+    .btn-light{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+    .btn-light:hover{background:#eaf3cf}
+    .text-link{font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:9px;background:none;padding:4px 0;border-bottom:1px solid currentColor}
+    .text-link .icon{width:14px;height:14px}
+    .hero-footnote{display:flex;align-items:center;gap:9px;font-size:10px;color:var(--muted);margin-top:35px}
+    .hero-footnote .icon{width:15px;height:15px;color:var(--ink)}
+    .hero-footnote .dot{width:3px;height:3px;border-radius:50%;background:#a0a69a;margin:0 5px}
+    .hero-visual{position:relative;height:488px;min-width:0}
+    .hero-image-wrap{height:100%;overflow:hidden;border-radius:12px;position:relative;background:#e2dfd3}
+    .hero-image-wrap>img{object-position:51% 54%;filter:brightness(.96);transition:transform 1s}
+    .hero-visual:hover .hero-image-wrap>img{transform:scale(1.025)}
+    .hero-image-wrap:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,rgba(36,37,25,.22));pointer-events:none}
+    .image-tag{position:absolute;top:21px;left:22px;display:flex;align-items:center;gap:8px;background:rgba(255,255,250,.91);padding:9px 12px;border-radius:4px;font-size:9px;font-weight:600;letter-spacing:1.1px}
+    .image-tag span{width:5px;height:5px;background:var(--ink);border-radius:50%}
+    .hero-image-index{position:absolute;top:25px;right:23px;font-size:10px;color:white;letter-spacing:1px;text-shadow:0 1px 6px #333}
+    .floating-edit{position:absolute;left:-24px;bottom:28px;background:#fffffa;box-shadow:0 8px 30px #26312816;border:1px solid #fff;border-radius:8px;display:flex;align-items:center;gap:13px;padding:13px 15px;z-index:2;transition:transform .2s}
+    .floating-edit:hover{transform:translateY(-4px)}
+    .floating-icon{width:49px;height:49px;border-radius:5px;background:#eef0e5;display:grid;place-items:center}
+    .floating-icon .icon{width:26px;height:26px;stroke-width:1.3}
+    .floating-edit small{font-size:8px;letter-spacing:1.3px;display:block;color:var(--muted);margin-bottom:5px}
+    .floating-edit strong{display:block;font-size:12px;font-weight:600}
+    .floating-edit>.icon{margin-left:10px;width:17px}
+    .good-stamp{position:absolute;right:16px;bottom:23px;width:105px;height:105px;z-index:2;filter:drop-shadow(0 3px 8px #293b2520);transform:rotate(12deg)}
+    .trust-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#f6f7f0}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 0}
+    .trust-item{display:flex;align-items:center;justify-content:center;gap:14px;border-right:1px solid #dde2d5}
+    .trust-item:first-child{justify-content:flex-start}
+    .trust-item:last-child{border:0;justify-content:flex-end}
+    .trust-item>.icon{width:26px;height:26px;stroke-width:1.4}
+    .trust-item strong{font-weight:600;font-size:11px;display:block;margin-bottom:5px}
+    .trust-item span{display:block;font-size:10px;color:var(--muted)}
+    .section{padding:63px 0}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:26px}
+    .section-head h2,.section-heading{font-size:33px;letter-spacing:-1.25px;font-weight:600;line-height:1.2}
+    .section-head p{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.65}
+    .section-head .eyebrow{margin-bottom:12px;font-size:9px;letter-spacing:1.6px}
+    .section-head .text-link{margin-bottom:4px;white-space:nowrap}
+    .category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:19px}
+    .category-card{position:relative;overflow:hidden;border-radius:9px;height:192px;background:#e6e4dc;text-align:left;isolation:isolate;padding:0}
+    .category-card img{transition:transform .6s;filter:brightness(.9)}
+    .category-card:hover img{transform:scale(1.07)}
+    .category-card:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,rgba(24,34,26,.64));z-index:1}
+    .category-content{position:absolute;bottom:20px;left:21px;right:17px;display:flex;align-items:center;justify-content:space-between;color:white;z-index:2}
+    .category-content strong{display:block;font-size:16px;font-weight:500;letter-spacing:-.2px}
+    .category-content small{font-size:9px;display:block;margin-top:4px;color:#eef1e5}
+    .category-content .icon{width:18px;height:18px}
+    .bestsellers{padding-top:12px;padding-bottom:63px}
+    .product-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:25px}
+    .filters{display:flex;gap:8px;overflow:auto;scrollbar-width:none;padding:3px 0}
+    .filters::-webkit-scrollbar{display:none}
+    .filter{font-size:11px;padding:10px 17px;background:transparent;border:1px solid var(--line);border-radius:30px;white-space:nowrap;transition:all .2s}
+    .filter:hover{border-color:#a1af93}
+    .filter.active{background:var(--ink);border-color:var(--ink);color:white}
+    .item-count{font-size:10px;color:var(--muted);white-space:nowrap}
+    .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 20px}
+    .product-card{min-width:0;animation:appear .35s both}
+    .product-visual{position:relative}
+    .product-image{height:auto;aspect-ratio:1 / 1.13;background:#eeeee6;display:block;border-radius:9px;overflow:hidden}
+    .product-image img{transition:transform .6s}
+    .product-card:hover .product-image img{transform:scale(1.045)}
+    .product-tag{position:absolute;top:13px;left:12px;padding:6px 9px;background:#fbfcf3;font-size:8px;font-weight:600;letter-spacing:.3px;border-radius:3px;pointer-events:none}
+    .save-button{position:absolute;right:10px;top:10px;background:rgba(255,255,250,.91);width:31px;height:31px;border-radius:50%;display:grid;place-items:center;transition:transform .2s}
+    .save-button .icon{width:16px;height:16px;stroke-width:1.6}
+    .save-button:hover{transform:scale(1.08)}
+    .save-button.saved{background:var(--lime)}
+    .save-button.saved .icon{fill:var(--ink)}
+    .product-info{padding:16px 1px 0}
+    .product-category{font-size:8px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;margin-bottom:6px}
+    .product-name{font-size:14px;letter-spacing:-.15px;font-weight:500;line-height:1.4;display:inline-block}
+    .product-name:hover{text-decoration:underline;text-underline-offset:3px}
+    .product-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:9px}
+    .product-price{font-size:14px;font-weight:600}
+    .quick-add{background:transparent;border:1px solid #cdd4c5;border-radius:50%;width:31px;height:31px;display:grid;place-items:center;transition:background .2s}
+    .quick-add .icon{width:16px;height:16px}
+    .quick-add:hover{background:var(--ink);color:white;border-color:var(--ink)}
+    .collection-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+    .collection-foot p{font-size:10px;color:var(--muted);line-height:1.7;max-width:470px}
+    .collection-foot .text-link{white-space:nowrap;font-size:11px}
+    .editorial{display:grid;grid-template-columns:1fr 1fr;border-radius:12px;overflow:hidden;background:#e9edde;min-height:355px}
+    .editorial-image{min-height:355px;position:relative;overflow:hidden}
+    .editorial-image img{object-position:50% 57%}
+    .editorial-image-label{position:absolute;left:25px;bottom:23px;font-size:9px;letter-spacing:1.2px;color:white;background:#263c3299;padding:8px 11px;border-radius:3px}
+    .editorial-copy{padding:47px 55px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+    .editorial-copy .eyebrow{font-size:9px;letter-spacing:1.5px}
+    .editorial-copy h2{font-size:40px;font-weight:500;letter-spacing:-1.6px;line-height:1.15;margin:17px 0}
+    .editorial-copy h2 em{font-family:"Instrument Serif",serif;font-size:1.2em;font-weight:400}
+    .editorial-copy p{font-size:12px;color:#6a7464;line-height:1.85;max-width:300px;margin-bottom:25px}
+    .approach{padding:72px 0}
+    .approach-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:90px;align-items:center}
+    .approach-copy .eyebrow{margin-bottom:17px;font-size:9px}
+    .approach-copy h2{font-size:37px;letter-spacing:-1.4px;line-height:1.2;font-weight:500;margin-bottom:16px;max-width:390px}
+    .approach-copy>p{color:var(--muted);font-size:13px;line-height:1.9;max-width:380px}
+    .approach-points{display:flex;gap:20px;margin-top:23px}
+    .approach-points span{display:flex;align-items:center;gap:6px;font-size:10px}
+    .approach-points .icon{width:15px;height:15px}
+    .review-card{background:#f0f2e9;border:1px solid #e3e7da;border-radius:10px;padding:30px 34px}
+    .review-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .review-card-top>.icon{width:30px;height:30px;stroke-width:1.2}
+    .review-label{font-size:9px;letter-spacing:1px;background:#fffef7;border:1px solid #e0e3d6;padding:6px 9px;border-radius:4px}
+    .review-card h3{font-size:20px;font-weight:500;letter-spacing:-.5px;margin-bottom:10px}
+    .review-card p{font-size:12px;color:#72796a;line-height:1.85;margin-bottom:22px}
+    .faq-section{padding:55px 0 62px;border-top:1px solid var(--line)}
+    .faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px}
+    .faq-intro .eyebrow{font-size:9px;margin-bottom:14px}
+    .faq-intro h2{font-size:35px;font-weight:500;letter-spacing:-1.4px;line-height:1.2;margin-bottom:15px}
+    .faq-intro p{font-size:12px;color:var(--muted);margin-bottom:22px;line-height:1.8;max-width:265px}
+    .faq-list details{border-bottom:1px solid var(--line)}
+    .faq-list details:first-child{border-top:1px solid var(--line)}
+    .faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12px;font-weight:500;padding:19px 0}
+    .faq-list summary::-webkit-details-marker{display:none}
+    .faq-list summary .icon{width:15px;height:15px;transition:transform .25s}
+    .faq-list details[open] summary .icon{transform:rotate(45deg)}
+    .faq-list details>p{font-size:12px;color:var(--muted);line-height:1.85;padding:0 25px 20px 0}
+    .faq-list details>p button{background:none;padding:0;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+    .site-footer{background:var(--ink);color:#f0f3e9}
+    .newsletter{padding:37px 0;display:flex;justify-content:space-between;align-items:center;gap:40px;border-bottom:1px solid #496052}
+    .newsletter .eyebrow{font-size:8px;color:#bdcbb1;letter-spacing:1.5px;margin-bottom:9px}
+    .newsletter h2{font-size:25px;font-weight:500;letter-spacing:-.7px}
+    .newsletter-form{width:370px;max-width:100%}
+    .email-field{display:flex;align-items:center;border-bottom:1px solid #9dab91}
+    .email-field input{width:100%;border:0;background:none;color:#fff;padding:12px 0;font-size:12px;outline-offset:2px}
+    .email-field input::placeholder{color:#c5cdbd}
+    .email-field button{width:40px;height:40px;background:none;color:var(--lime);display:grid;place-items:center}
+    .newsletter-form>p{font-size:9px;color:#aebba4;margin-top:8px;line-height:1.6}
+    .footer-main{display:grid;grid-template-columns:2fr 1fr 1fr 1.1fr;gap:50px;padding:43px 0 40px}
+    .footer-brand .logo{color:var(--lime);font-size:31px}
+    .footer-brand>p{font-size:11px;line-height:1.9;max-width:230px;margin-top:15px;color:#bfccb8}
+    .footer-col h3{font-size:11px;font-weight:500;margin-bottom:18px}
+    .footer-col a,.footer-col>button{display:block;background:none;padding:0;font-size:10px;color:#b9c7b1;line-height:2.65;text-align:left}
+    .footer-col a:hover,.footer-col>button:hover{color:var(--lime)}
+    .footer-bottom{border-top:1px solid #496052;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .footer-bottom p{font-size:9px;color:#b7c5ae;line-height:1.8}
+    .payment-badges{display:flex;gap:6px;align-items:center}
+    .payment-badges span{padding:5px 8px;font-size:9px;color:#e9eedf;border:1px solid #60715b;border-radius:3px;font-weight:600}
+    .payment-badges small{font-size:8px;color:#bbc8b1;margin-right:5px}
+    dialog{color:var(--text);border:0;padding:0;background:var(--paper);width:min(620px,calc(100% - 32px));max-height:90dvh;border-radius:15px;box-shadow:0 25px 100px #0e281f36}
+    dialog::backdrop{background:rgba(21,39,30,.44);backdrop-filter:blur(4px)}
+    dialog[open]{animation:appear .22s ease-out}
+    .modal-shell{padding:28px}
+    .modal-header{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:23px}
+    .modal-header h2{font-size:24px;font-weight:500;letter-spacing:-.7px}
+    .modal-header .icon-button{border:1px solid var(--line);min-width:34px;min-height:34px;width:34px;height:34px}
+    .modal-description{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:24px}
+    .field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+    .field label{font-size:11px;font-weight:600}
+    .field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d6ddcd;border-radius:5px;background:white;color:var(--text);font-size:13px;min-height:44px}
+    .field textarea{resize:vertical;min-height:105px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .form-status{font-size:12px;line-height:1.8;color:var(--ink);margin-top:15px}
+    .search-box{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--ink);margin-bottom:22px;padding-bottom:12px}
+    .search-box input{border:0;background:none;font-size:19px;width:100%;outline:none}
+    .search-meta{font-size:10px;color:var(--muted);letter-spacing:.7px;text-transform:uppercase;margin-bottom:14px}
+    .search-results{display:grid;gap:10px;max-height:53dvh;overflow:auto}
+    .search-result{display:flex;align-items:center;gap:14px;padding:8px;border-radius:7px;transition:background .2s}
+    .search-result:hover{background:var(--cream)}
+    .search-thumb{width:62px;height:65px;flex-shrink:0;border-radius:5px;overflow:hidden}
+    .search-result strong{display:block;font-size:13px;font-weight:500}
+    .search-result small{display:block;font-size:10px;color:var(--muted);margin-top:5px}
+    .search-result>span:last-child{margin-left:auto;font-size:12px;white-space:nowrap}
+    .empty-state{text-align:center;padding:42px 20px}
+    .empty-state>.icon{width:43px;height:43px;margin-bottom:20px;stroke-width:1.2}
+    .empty-state h3{font-size:21px;font-weight:500;margin-bottom:10px}
+    .empty-state p{color:var(--muted);font-size:12px;line-height:1.8;margin-bottom:23px}
+    #cartDialog{position:fixed;inset:0 0 0 auto;margin:0;width:460px;max-width:100%;height:100dvh;max-height:100dvh;border-radius:14px 0 0 14px}
+    #cartDialog[open]{animation:slideIn .28s ease-out}
+    .cart-shell{height:100%;display:flex;flex-direction:column}
+    .cart-shell>.modal-header{padding:25px 26px 19px;margin:0;border-bottom:1px solid var(--line)}
+    .cart-shell .modal-header h2 span{font-size:14px;color:var(--muted);margin-left:5px}
+    .cart-preview-label{font-size:10px;color:#687760;background:#edf1e4;padding:10px 26px;display:flex;align-items:center;gap:8px}
+    .cart-preview-label .icon{width:14px;height:14px}
+    .cart-items{flex:1;overflow:auto;padding:0 25px}
+    .cart-item{display:grid;grid-template-columns:76px 1fr;gap:15px;padding:22px 0;border-bottom:1px solid var(--line)}
+    .cart-item-image{width:76px;height:95px;border-radius:6px;overflow:hidden}
+    .cart-item-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+    .cart-item h3{font-size:12px;font-weight:500;line-height:1.5}
+    .cart-item-category{color:var(--muted);font-size:9px;margin-top:5px}
+    .remove-item{background:none;color:var(--muted);padding:0 0 5px 5px}
+    .remove-item .icon{width:14px;height:14px}
+    .cart-item-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+    .quantity-control{display:flex;align-items:center;border:1px solid #d5dacd;border-radius:4px;height:31px}
+    .quantity-control button{display:grid;place-items:center;background:none;width:29px;height:29px}
+    .quantity-control button .icon{width:12px;height:12px}
+    .quantity-control span{font-size:11px;min-width:24px;text-align:center}
+    .cart-item-bottom>strong{font-size:12px;font-weight:500}
+    .cart-summary{padding:23px 26px 27px;border-top:1px solid var(--line);background:#f5f6ef}
+    .total-row{display:flex;align-items:center;justify-content:space-between;font-size:17px;font-weight:500;margin-bottom:10px}
+    .cart-summary p{font-size:10px;color:var(--muted);line-height:1.7}
+    .cart-summary .btn{width:100%;margin:20px 0 12px}
+    .cart-summary .cart-payment-note{text-align:center;font-size:9px;display:flex;align-items:center;justify-content:center;gap:6px}
+    .cart-payment-note .icon{width:12px;height:12px}
+    .product-dialog{width:min(990px,calc(100% - 40px));max-height:92dvh}
+    .product-modal-top{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--paper);z-index:3}
+    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:10px;color:var(--muted)}
+    .breadcrumb .icon{width:12px;height:12px}
+    .product-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;padding:29px}
+    .detail-image{height:485px;border-radius:9px;overflow:hidden;background:var(--cream)}
+    .detail-category{font-size:9px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin:5px 0 12px}
+    .detail-info h2{font-size:31px;letter-spacing:-1px;line-height:1.15;font-weight:500;margin-bottom:12px}
+    .detail-price{font-size:23px;letter-spacing:-.5px}
+    .tax-note{font-size:9px;color:var(--muted);margin-top:5px}
+    .review-jump{font-size:10px;background:none;padding:0;margin-top:16px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+    .detail-description{font-size:12px;line-height:1.9;color:var(--muted);margin:19px 0}
+    .detail-feature-list{padding:0;list-style:none;margin:0 0 20px;display:grid;gap:9px}
+    .detail-feature-list li{font-size:11px;display:flex;align-items:center;gap:7px}
+    .detail-feature-list .icon{width:13px;height:13px}
+    .detail-add-row{display:flex;align-items:center;gap:12px}
+    .detail-add-row .quantity-control{height:47px}
+    .detail-add-row .quantity-control button{height:43px;width:31px}
+    .detail-add-row .btn{flex:1}
+    .delivery-check{margin-top:21px;padding-top:18px;border-top:1px solid var(--line)}
+    .delivery-check label{font-size:10px;display:flex;align-items:center;gap:7px;margin-bottom:9px}
+    .delivery-check label .icon{width:15px;height:15px}
+    .pincode-field{display:flex;border:1px solid #d6ddcd;background:white;border-radius:4px;overflow:hidden}
+    .pincode-field input{min-width:0;flex:1;border:0;padding:10px;font-size:11px;background:none}
+    .pincode-field button{font-size:10px;font-weight:600;color:var(--ink);background:var(--cream);padding:0 15px}
+    .delivery-result{font-size:10px;color:var(--muted);line-height:1.7;margin-top:8px}
+    .detail-bottom{padding:0 29px 29px}
+    .catalog-note{font-size:10px;color:var(--muted);background:#f0f2e8;border-radius:5px;padding:12px 15px;line-height:1.8;margin-bottom:25px}
+    .detail-specs h3,.detail-reviews h3{font-size:17px;font-weight:500;margin-bottom:14px}
+    .spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-bottom:27px}
+    .spec-row{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:10px 0;font-size:11px}
+    .spec-row span{color:var(--muted)}
+    .spec-row strong{font-weight:500;text-align:right}
+    .detail-reviews{border-top:1px solid var(--line);padding-top:24px}
+    .detail-reviews>p{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:16px}
+    .draft-review{background:var(--cream);padding:16px;border-radius:5px;margin-bottom:17px}
+    .draft-review small{font-size:9px;color:var(--muted);display:block;margin-bottom:10px}
+    .draft-review strong{font-size:12px;font-weight:500}
+    .draft-review p{white-space:pre-wrap;font-size:12px;line-height:1.8;margin-top:8px}
+    .policy-content{font-size:12px;color:#626e5d;line-height:1.9}
+    .policy-content h3{font-size:15px;font-weight:600;color:var(--ink);margin:25px 0 8px}
+    .policy-content p{margin-bottom:12px}
+    .policy-content ul{padding-left:18px}
+    .policy-content li{margin:5px 0}
+    .policy-note{font-size:10px;padding:13px 15px;border-radius:5px;background:var(--cream);line-height:1.8;margin-bottom:22px}
+    .checkout-notice{display:flex;gap:11px;background:#edf1e2;border-radius:6px;padding:14px;font-size:11px;line-height:1.75;margin-bottom:22px}
+    .checkout-notice .icon{width:19px;height:19px;margin-top:2px}
+    .checkout-notice strong{display:block;font-weight:600}
+    .checkout-section-title{font-size:14px;font-weight:600;margin:24px 0 17px}
+    .payment-option{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:5px;padding:13px;margin-bottom:9px;font-size:11px}
+    .payment-option:has(input:checked){border-color:#708461;background:#f0f3e7}
+    .payment-option input{accent-color:var(--ink)}
+    .payment-option span{flex:1}
+    .payment-option small{display:block;color:var(--muted);font-size:9px;margin-top:4px}
+    .checkout-totals{padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:23px 0;display:grid;gap:10px}
+    .checkout-totals>div{display:flex;justify-content:space-between;font-size:11px;gap:20px}
+    .checkout-totals>div:last-child{font-size:17px;font-weight:600;padding-top:10px}
+    .checkout-form>.btn{width:100%}
+    .checkout-legal{font-size:9px;color:var(--muted);line-height:1.8;margin:13px 0 0;text-align:center}
+    .checkout-legal button{font-size:inherit;background:none;padding:0;text-decoration:underline}
+    .success-symbol{background:var(--lime);width:66px;height:66px;display:grid;place-items:center;border-radius:50%;margin:8px auto 22px}
+    .success-symbol .icon{width:30px;height:30px}
+    #menuDialog{position:fixed;margin:0;inset:0 auto 0 0;border-radius:0 15px 15px 0;width:330px;height:100dvh;max-height:100dvh}
+    .mobile-nav{display:grid;gap:4px}
+    .mobile-nav a,.mobile-nav button{text-align:left;background:none;font-size:19px;padding:15px 0;border-bottom:1px solid var(--line)}
+    .mobile-nav p{font-size:9px;color:var(--muted);letter-spacing:1.5px;margin-top:25px;margin-bottom:8px}
+    .mobile-nav .small-nav{font-size:13px}
+    .toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:#fff;border:1px solid #57704c;box-shadow:0 6px 30px #18312526;border-radius:7px;padding:14px 17px;z-index:150;display:flex;gap:14px;align-items:center;max-width:calc(100% - 32px);width:max-content;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+    .toast.visible{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+    .toast .icon{width:16px;height:16px;color:var(--lime)}
+    .toast-message{font-size:11px}
+    .toast button{font-size:10px;font-weight:600;color:var(--lime);border-bottom:1px solid var(--lime);padding:2px 0;background:none;white-space:nowrap}
+    @keyframes appear{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+    @media(min-width:1500px){.hero-grid{gap:70px}.hero-visual{height:512px}.hero h1{font-size:82px}.hero{padding:48px 0}}
+    @media(max-width:1100px){
+      .container{width:calc(100% - 64px)}.desktop-nav{gap:23px;margin-left:0}.header-inner{gap:15px}.hero-grid{gap:32px}.hero h1{font-size:66px;letter-spacing:-3.8px}.hero-visual{height:465px}.hero-cta{gap:18px}.hero-cta .btn{padding-inline:17px}.hero-cta .text-link{font-size:11px}.good-stamp{width:88px;height:88px;right:10px;bottom:21px}.floating-edit{left:-13px;padding:11px;gap:10px}.floating-edit strong{font-size:11px}.floating-icon{width:40px;height:43px}.floating-edit>.icon{margin-left:0}.trust-item{gap:10px}.trust-item>.icon{width:23px;height:23px}.trust-item strong{font-size:10px}.trust-item span{font-size:9px}.category-card{height:170px}.category-content{left:15px;right:13px;bottom:17px}.category-content strong{font-size:14px}.editorial-copy{padding:35px}.approach-grid,.faq-grid{gap:50px}.footer-main{gap:35px}.product-dialog{width:calc(100% - 50px)}
+    }
+    @media(max-width:800px){
+      .container{width:calc(100% - 40px)}.announcement-left{display:none}.announcement-center{position:static;transform:none}.announcement .container{justify-content:space-between}.announcement{font-size:10px}.announcement .country{font-size:9px}.header-inner{height:69px}.logo{font-size:29px}.brand-mark{width:27px;height:27px}.desktop-nav{display:none}.mobile-menu-button{display:inline-flex}.header-actions{gap:9px}.header-separator{display:none}.header-brand-group{display:flex;align-items:center;gap:7px}.header-brand-group .icon-button{margin-left:-10px}.hero{padding:32px 0}.hero-grid{gap:27px;grid-template-columns:1fr 1fr}.hero h1{font-size:53px;letter-spacing:-2.9px;margin-top:20px}.hero-copy>p{font-size:12px;line-height:1.85}.hero .eyebrow{font-size:8px;letter-spacing:1.4px;gap:8px}.eyebrow-line{width:20px}.hero-cta{align-items:flex-start;flex-direction:column;gap:14px;margin-top:23px}.hero-cta .btn{min-height:43px;font-size:11px}.hero-footnote{font-size:8px;flex-wrap:wrap;margin-top:20px;gap:6px}.hero-visual{height:395px}.floating-edit{bottom:20px;left:-12px}.floating-icon{display:none}.floating-edit strong{font-size:10px}.floating-edit small{font-size:7px}.floating-edit{padding:11px 12px}.good-stamp{width:72px;height:72px;bottom:87px;right:11px}.image-tag{left:12px;top:13px;padding:8px;font-size:7px;letter-spacing:.6px}.hero-image-index{display:none}.trust-grid{grid-template-columns:repeat(2,1fr);gap:22px 0;padding:23px 0}.trust-item,.trust-item:first-child,.trust-item:last-child{justify-content:flex-start;padding-left:25px}.trust-item:nth-child(odd){padding-left:0}.trust-item:nth-child(2){border:0}.trust-item strong{font-size:11px}.trust-item span{font-size:10px}.trust-item>.icon{width:25px;height:25px}.section{padding:44px 0}.section-head h2,.section-heading{font-size:28px}.category-grid{gap:12px}.category-card{height:150px}.category-content{left:12px;right:10px;bottom:14px}.category-content strong{font-size:12px}.category-content small{font-size:8px}.category-content .icon{width:14px}.product-grid{gap:26px 15px;grid-template-columns:repeat(2,1fr)}.product-image{aspect-ratio:1 / 1.03}.product-name{font-size:15px}.product-price{font-size:14px}.product-category{font-size:9px}.product-tag{font-size:9px}.product-toolbar{gap:8px}.filter{padding:9px 13px;font-size:10px}.item-count{display:none}.bestsellers{padding-top:8px;padding-bottom:43px}.editorial{min-height:310px}.editorial-image{min-height:310px}.editorial-copy{padding:27px}.editorial-copy h2{font-size:31px}.editorial-copy p{font-size:11px}.editorial-copy .eyebrow{font-size:8px;letter-spacing:1px}.approach{padding:48px 0}.approach-grid{gap:30px}.approach-copy h2{font-size:29px}.approach-copy>p{font-size:12px}.approach-points{flex-direction:column;gap:10px}.review-card{padding:25px}.review-card h3{font-size:18px}.review-card p{font-size:11px}.faq-grid{gap:35px;grid-template-columns:.8fr 1.2fr}.faq-intro h2{font-size:29px}.faq-section{padding:42px 0}.newsletter{gap:28px}.newsletter h2{font-size:21px}.newsletter-form{width:300px}.footer-main{grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-brand{grid-column:1 / -1;display:flex;gap:35px;align-items:center}.footer-brand>p{margin:0;max-width:320px}.footer-bottom{flex-wrap:wrap}.product-detail-grid{gap:24px;padding:22px;grid-template-columns:1fr 1fr}.detail-image{height:420px}.detail-info h2{font-size:26px}.detail-add-row{gap:8px}.detail-add-row .btn{padding-inline:12px}.detail-add-row .quantity-control button{width:24px}.detail-bottom{padding:0 22px 22px}
+    }
+    @media(max-width:540px){
+      html{scroll-padding-top:86px}.announcement{height:29px}.announcement-center{font-size:9px;gap:6px}.announcement .country{font-size:8px}.header-inner{height:65px}.header-actions{gap:4px}.bag-label{display:none}.bag-button{gap:6px}.bag-count{width:18px;height:18px;font-size:9px}.logo{font-size:28px;gap:7px}.brand-mark{width:24px;height:24px}.icon-button{min-width:36px;min-height:36px}.hero{padding-top:32px;padding-bottom:29px}.hero-grid{grid-template-columns:1fr;gap:31px}.hero h1{font-size:62px;letter-spacing:-3.6px;margin:20px 0 17px}.hero .eyebrow{font-size:9px;letter-spacing:1.6px}.hero-copy>p{font-size:13px;max-width:310px;line-height:1.8}.hero-cta{flex-direction:row;align-items:center;gap:23px;margin-top:24px}.hero-cta .btn{padding:12px 17px;min-height:45px;font-size:11px}.hero-cta .text-link{font-size:10px}.hero-footnote{font-size:9px;margin-top:22px;gap:7px}.hero-footnote .dot{margin:0 3px}.hero-footnote .icon{width:13px;height:13px}.hero-visual{height:335px;margin-left:7px}.hero-image-wrap{border-radius:9px}.hero-image-wrap>img{object-position:50% 58%}.floating-edit{left:-7px;bottom:19px;padding:11px 13px;gap:10px}.floating-icon{display:grid;width:38px;height:39px}.floating-icon .icon{width:23px;height:23px}.floating-edit small{font-size:7px}.floating-edit strong{font-size:10px}.good-stamp{width:82px;height:82px;bottom:19px;right:12px}.image-tag{font-size:8px;left:15px;top:15px;padding:8px 10px}.trust-grid{gap:21px 0;padding:22px 0}.trust-item{gap:11px}.trust-item,.trust-item:last-child{padding-left:16px}.trust-item strong{font-size:10px}.trust-item span{font-size:8px}.trust-item>.icon{width:23px;height:23px}.section{padding:37px 0}.section-head{gap:15px;margin-bottom:22px;align-items:center}.section-head h2{font-size:26px;letter-spacing:-1px}.section-head .text-link{font-size:10px;gap:5px}.category-grid{grid-template-columns:1fr 1fr;gap:12px}.category-card{height:158px}.category-content{left:14px;right:12px}.category-content strong{font-size:13px}.category-content small{font-size:8px}.bestsellers{padding-top:4px;padding-bottom:36px}.bestsellers .section-head{align-items:flex-end}.bestsellers .section-head h2{font-size:28px;max-width:255px}.bestsellers .section-head .btn{display:none}.section-head p{font-size:11px;margin-top:10px}.section-head .eyebrow{font-size:8px;margin-bottom:10px}.product-toolbar{margin-bottom:20px}.filters{gap:7px;margin-right:-20px;padding-right:20px}.filter{font-size:10px;padding:9px 13px}.product-grid{gap:25px 13px}.product-image{aspect-ratio:1 / 1.18;border-radius:7px}.product-tag{top:10px;left:8px;font-size:7px;padding:5px 6px;max-width:calc(100% - 46px)}.save-button{top:8px;right:7px;width:26px;height:26px}.save-button .icon{width:13px;height:13px}.product-info{padding-top:12px}.product-name{font-size:12px}.product-category{font-size:7px;letter-spacing:.8px}.product-price{font-size:12px}.product-bottom{margin-top:8px}.quick-add{width:29px;height:29px}.collection-foot{gap:20px;align-items:flex-start;margin-top:26px}.collection-foot p{font-size:8px;max-width:210px}.collection-foot .text-link{font-size:9px}.editorial{grid-template-columns:1fr}.editorial-image{min-height:230px;height:230px}.editorial-copy{padding:29px}.editorial-copy h2{font-size:37px;max-width:280px;margin:14px 0}.editorial-copy p{font-size:12px;max-width:285px}.editorial-copy .eyebrow{font-size:8px}.editorial-image-label{left:20px;bottom:17px;font-size:8px}.approach{padding:40px 0}.approach-grid{grid-template-columns:1fr;gap:26px}.approach-copy h2{font-size:31px;max-width:330px}.approach-copy>p{max-width:330px}.approach-points{flex-direction:row;gap:16px}.approach-points span{font-size:9px}.review-card{padding:24px}.review-card-top{margin-bottom:17px}.review-card h3{font-size:20px}.review-card p{font-size:12px}.faq-grid{grid-template-columns:1fr;gap:27px}.faq-intro h2{font-size:30px}.faq-intro p{max-width:100%;margin-bottom:15px}.faq-intro h2 br{display:none}.faq-list summary{font-size:12px;padding:18px 0}.faq-list details>p{font-size:11px}.newsletter{flex-direction:column;align-items:flex-start;gap:21px;padding:30px 0}.newsletter h2{font-size:24px;max-width:270px;line-height:1.25}.newsletter-form{width:100%}.newsletter-form>p{font-size:8px}.footer-main{grid-template-columns:1fr 1fr;gap:27px;padding:30px 0}.footer-brand{display:block;grid-column:1 / -1}.footer-brand>p{margin-top:12px;max-width:235px;font-size:10px}.footer-col:last-child{grid-column:1 / -1}.footer-col:last-child h3{margin-bottom:10px}.footer-col:last-child button{display:inline-block;margin-right:19px}.footer-col h3{font-size:11px;margin-bottom:11px}.footer-col a,.footer-col>button{font-size:10px}.footer-bottom{gap:17px;padding:20px 0 25px}.footer-bottom p{font-size:8px}.payment-badges span{font-size:8px}.payment-badges small{font-size:8px}dialog{width:calc(100% - 24px);border-radius:11px;max-height:94dvh}.modal-shell{padding:22px}.modal-header h2{font-size:23px}.modal-description{font-size:11px}.form-row{gap:11px}.field input,.field select,.field textarea{font-size:14px}.product-dialog{width:100%;height:100dvh;max-height:100dvh;border-radius:0}.product-modal-top{padding:12px 18px}.product-detail-grid{grid-template-columns:1fr;gap:23px;padding:18px}.detail-image{height:320px}.detail-info h2{font-size:31px}.detail-category{font-size:9px}.detail-price{font-size:23px}.detail-description{font-size:13px}.detail-feature-list li{font-size:12px}.detail-add-row .quantity-control button{width:34px}.detail-bottom{padding:0 18px 25px}.spec-grid{grid-template-columns:1fr}.catalog-note{font-size:9px}.detail-reviews>p{font-size:11px}#cartDialog{width:100%;border-radius:0}.cart-shell>.modal-header{padding:20px}.cart-items{padding:0 20px}.cart-summary{padding:20px}.cart-item{padding:18px 0}.cart-summary .btn{margin-top:15px}.toast{bottom:16px;gap:10px;padding:12px 14px}.toast-message{font-size:10px}.search-box input{font-size:17px}.search-result{gap:11px;padding:7px 0}.search-thumb{width:52px;height:59px}.search-result strong{font-size:11px}.search-result>span:last-child{font-size:10px}.checkout-notice{font-size:10px}.checkout-section-title{font-size:13px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.3 5.8a5 5 0 0 0-7.1 0L12 7l-1.2-1.2a5 5 0 0 0-7.1 7.1L12 21l8.3-8.1a5 5 0 0 0 0-7.1Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 3.5 6v6c0 5.2 8.5 9 8.5 9s8.5-3.8 8.5-9V6L12 3Z"/><path d="m8 11 3 3 5-5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 5h12v12H2V5Zm12 5h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M18 10v4h4"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/><path d="M12 8v5l3 2"/></symbol>
+    <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10a5 5 0 0 0 5-5m10 0a5 5 0 0 0 5 5M2 14a5 5 0 0 1 5 5m10 0a5 5 0 0 1 5-5"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h11"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 8h12v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Zm12 1h2a3 3 0 1 1 0 6h-2M7 4v1m4-1v1m4-1v1M2 21h18"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.7 7.3L22 12l-7.3 2.7L12 22l-2.7-7.3L2 12l7.3-2.7L12 2Z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M10 5H4v7h5c0 3-1 5-4 7m15-14h-6v7h5c0 3-1 5-4 7"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.2"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C7 2 3 7 4 13a7 7 0 0 0 9 6c6-2 7-9 7-16ZM3 22 15 10"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    <div class="container">
+      <span class="announcement-left">Little things. Better everydays.</span>
+      <span class="announcement-center"><svg class="icon"><use href="#i-spark"/></svg> Good finds. Everyday prices.</span>
+      <span class="country"><span class="country-dot"></span> India <span style="opacity:.45;margin:0 3px">/</span> ₹ INR</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-brand-group">
+        <button class="icon-button mobile-menu-button" aria-label="Open navigation" onclick="openModal('menuDialog')"><svg class="icon"><use href="#i-menu"/></svg></button>
+        <a href="#" class="logo" aria-label="daygood home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 18C3-4-5 20 18 20-4 37 20 45 20 22c17 22 25-2 2-2C44 3 20-5 20 18Z" fill="currentColor"/></svg>
+          daygood.
+        </a>
+      </div>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#best-sellers" data-shop-all>Shop all <span class="nav-new">The edit</span></a>
+        <a href="#best-sellers" data-shortlist>Best Sellers</a>
+        <a href="#categories">Categories</a>
+        <a href="#approach">Our approach</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" aria-label="Search products" onclick="openSearch()"><svg class="icon"><use href="#i-search"/></svg></button>
+        <span class="header-separator"></span>
+        <button class="bag-button" aria-label="Open shopping bag" onclick="openCart()">
+          <svg class="icon"><use href="#i-bag"/></svg><span class="bag-label">Bag</span><span class="bag-count" id="bagCount" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="heroTitle">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> The everyday, reimagined</div>
+          <h1 id="heroTitle">Make room<br>for <em>better.</em></h1>
+          <p>Considered essentials for your home, your routine, and everything in between.</p>
+          <div class="hero-cta">
+            <a href="#best-sellers" class="btn">Find your everyday <svg class="icon"><use href="#i-diagonal"/></svg></a>
+            <a href="#categories" class="text-link">Explore the edit <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="hero-footnote">
+            <svg class="icon"><use href="#i-check"/></svg><span>Useful by design</span><span class="dot"></span><span>Refreshingly straightforward</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1300&q=85" alt="A sunlit, thoughtfully styled living room with a natural wood table and soft neutral furnishings" fetchpriority="high">
+            <div class="image-tag"><span></span> A LITTLE MORE EVERYDAY GOOD</div>
+            <span class="hero-image-index">THE HOME EDIT / 01</span>
+          </div>
+          <button class="floating-edit" data-category="home" aria-label="Explore the Home and Living collection">
+            <span class="floating-icon"><svg class="icon"><use href="#i-cup"/></svg></span>
+            <span><small>THE HOME & LIVING EDIT</small><strong>Your space. A little happier.</strong></span>
+            <svg class="icon"><use href="#i-diagonal"/></svg>
+          </button>
+          <svg class="good-stamp" viewBox="0 0 110 110" aria-label="It's the little things">
+            <defs><path id="stampCircle" d="M55,55 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs>
+            <circle cx="55" cy="55" r="54" fill="#e1edb7"/>
+            <text fill="#243d32" font-size="8.4" font-family="DM Sans,sans-serif" font-weight="600" letter-spacing="2.2"><textPath href="#stampCircle" startOffset="1%">IT’S THE LITTLE THINGS · IT’S THE LITTLE THINGS ·</textPath></text>
+            <g transform="translate(55 55)" stroke="#243d32" stroke-width="2.1"><path d="M-19 0h38M0-19v38M-13.5-13.5l27 27m-27 0 27-27M-18-7l36 14M-7-18 7 0l7 18M-18 7 18-7l18-7M-7 18 0 0l7-18"/></g>
+            <circle cx="55" cy="55" r="6" fill="#e1edb7" stroke="#243d32" stroke-width="1.8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section" aria-label="Shopping information">
+      <div class="container trust-grid">
+        <div class="trust-item"><svg class="icon"><use href="#i-cash"/></svg><div><strong>Cash on delivery</strong><span>On eligible orders & pincodes</span></div></div>
+        <div class="trust-item"><svg class="icon"><use href="#i-shield"/></svg><div><strong>Secure payment options</strong><span>UPI, cards & netbanking at launch</span></div></div>
+        <div class="trust-item"><svg class="icon"><use href="#i-truck"/></svg><div><strong>No delivery guesswork</strong><span>Charges confirmed before you pay</span></div></div>
+        <div class="trust-item"><svg class="icon"><use href="#i-return"/></svg><div><strong>Clear return policies</strong><span>The details, always upfront</span></div></div>
+      </div>
+    </section>
+
+    <section class="section container" id="categories" aria-labelledby="categoryTitle">
+      <div class="section-head">
+        <div><h2 id="categoryTitle">A little good for every corner.</h2></div>
+        <a href="#best-sellers" class="text-link" data-shop-all>Shop all <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="home">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Warm, neutral home interiors" loading="lazy">
+          <span class="category-content"><span><strong>Home & Living</strong><small>Make yourself at home</small></span><svg class="icon"><use href="#i-diagonal"/></svg></span>
+        </button>
+        <button class="category-card" data-category="kitchen">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="A considered coffee setup with ceramic cups" loading="lazy">
+          <span class="category-content"><span><strong>Kitchen & Dining</strong><small>Good days start here</small></span><svg class="icon"><use href="#i-diagonal"/></svg></span>
+        </button>
+        <button class="category-card" data-category="travel">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Everyday backpack for days on the move" loading="lazy">
+          <span class="category-content"><span><strong>On the Go</strong><small>Take the good with you</small></span><svg class="icon"><use href="#i-diagonal"/></svg></span>
+        </button>
+        <button class="category-card" data-category="desk">
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80" alt="A bright and uncluttered workspace" loading="lazy">
+          <span class="category-content"><span><strong>Desk & Tech</strong><small>A better kind of busy</small></span><svg class="icon"><use href="#i-diagonal"/></svg></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="bestsellers container" id="best-sellers" aria-labelledby="bestsellerTitle">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Best Sellers / The curated edit</div>
+          <h2 id="bestsellerTitle">Your next everyday favourite.</h2>
+          <p>Little upgrades you’ll reach for, day after day.</p>
+        </div>
+        <button class="btn btn-outline" data-show-all>Discover all finds <svg class="icon"><use href="#i-diagonal"/></svg></button>
+      </div>
+      <div class="product-toolbar">
+        <div class="filters" role="group" aria-label="Filter products by category">
+          <button class="filter active" data-filter="all" aria-pressed="true">All finds</button>
+          <button class="filter" data-filter="home" aria-pressed="false">Home & Living</button>
+          <button class="filter" data-filter="kitchen" aria-pressed="false">Kitchen & Dining</button>
+          <button class="filter" data-filter="travel" aria-pressed="false">On the Go</button>
+          <button class="filter" data-filter="desk" aria-pressed="false">Desk & Tech</button>
+        </div>
+        <span class="item-count" id="itemCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="collection-foot">
+        <p>An editor’s shortlist, not a verified sales ranking. Our Best Sellers will be based on real orders when the store launches.</p>
+        <button class="text-link" id="collectionToggle" data-show-all>See all 8 finds <svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+
+    <section class="container" aria-labelledby="editorialTitle">
+      <div class="editorial">
+        <div class="editorial-image">
+          <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=1100&q=85" alt="A peaceful, plant-filled room with natural textures and warm light" loading="lazy">
+          <span class="editorial-image-label">LESS NOISE. MORE YOU.</span>
+        </div>
+        <div class="editorial-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Small changes, good feelings</div>
+          <h2>A little less clutter.<br>A lot more <em>calm.</em></h2>
+          <p>A favourite mug. A warmer corner. Find the little things that make your space feel like you.</p>
+          <button class="btn" data-category="home">Meet the home edit <svg class="icon"><use href="#i-diagonal"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach container" id="approach" aria-labelledby="approachTitle">
+      <div class="approach-grid">
+        <div class="approach-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A good way to shop</div>
+          <h2>Thoughtfully picked.<br>Honestly presented.</h2>
+          <p>Shopping should feel simple. We focus on useful finds, clear product details, and upfront pricing. No pressure. No too-good-to-be-true promises.</p>
+          <div class="approach-points">
+            <span><svg class="icon"><use href="#i-check"/></svg> No false countdowns</span>
+            <span><svg class="icon"><use href="#i-check"/></svg> No invented reviews</span>
+          </div>
+        </div>
+        <div class="review-card" id="reviews">
+          <div class="review-card-top"><svg class="icon"><use href="#i-quote"/></svg><span class="review-label">REAL WORDS, ONLY</span></div>
+          <h3>Good finds deserve honest feedback.</h3>
+          <p>We’re new here, so there are no customer reviews yet. When reviews go live, you’ll see real feedback—not borrowed stars or made-up stories.</p>
+          <button class="text-link" onclick="openReview()">Explore product reviews <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <div class="eyebrow">The useful details</div>
+          <h2>A few good<br>questions.</h2>
+          <p>A little clarity before you add to bag. Here’s what you need to know.</p>
+          <button class="text-link" data-policy="contact">Need a hand? <svg class="icon"><use href="#i-diagonal"/></svg></button>
+        </div>
+        <div class="faq-list">
+          <details><summary>Can I pay cash on delivery?<svg class="icon"><use href="#i-plus"/></svg></summary><p>COD is a planned payment option for eligible Indian pincodes and order values. Availability and any COD fee must be confirmed before an order is placed. This storefront is a preview; no live orders or payments are accepted.</p></details>
+          <details><summary>Where do you deliver, and how long does it take?<svg class="icon"><use href="#i-plus"/></svg></summary><p>The store is being designed for delivery within India. Final serviceability, shipping charges, and a product-specific delivery estimate will be provided before payment. Items fulfilled by different suppliers may arrive separately. See our <button data-policy="shipping">shipping policy</button>.</p></details>
+          <details><summary>What if a product isn’t quite right?<svg class="icon"><use href="#i-plus"/></svg></summary><p>The proposed launch policy allows return requests within 7 days of delivery for eligible, unused items in their original packaging. Product-specific exclusions must be disclosed before purchase. Damaged, defective, or incorrect items are handled separately. Read the <button data-policy="returns">full returns and refunds policy</button>.</p></details>
+          <details><summary>How will payments be protected?<svg class="icon"><use href="#i-plus"/></svg></summary><p>At launch, online payments should be processed through a supported payment provider with UPI, cards, and netbanking. We will not ask for your UPI PIN, OTP, or complete card details over chat. No payment gateway is connected in this preview, and no payment information is collected.</p></details>
+          <details><summary>Are the product reviews verified?<svg class="icon"><use href="#i-plus"/></svg></summary><p>There are no published reviews in this preview. A review should only be labelled “verified purchase” when it can be matched to a genuine order. The review form currently saves a private draft on your device, not a public review.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="newsletter">
+        <div><div class="eyebrow">A little something to look forward to</div><h2>Good finds. Straight to your inbox.</h2></div>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="email-field">
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <input id="newsletterEmail" type="email" placeholder="Your email address" required autocomplete="email">
+            <button aria-label="Preview newsletter sign-up" type="submit"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          </div>
+          <p id="newsletterStatus" role="status">Occasional edits. No clutter. Preview form — not connected.</p>
+        </form>
+      </div>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="daygood home"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 18C3-4-5 20 18 20-4 37 20 45 20 22c17 22 25-2 2-2C44 3 20-5 20 18Z" fill="currentColor"/></svg>daygood.</a>
+          <p>Little things. Better everydays.<br>A considered edit for life, as you live it.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Find your good</h3>
+          <a href="#best-sellers" data-shop-all>Shop all</a>
+          <a href="#best-sellers" data-shortlist>Best Sellers</a>
+          <button data-category="home">Home & Living</button>
+          <button data-category="kitchen">Kitchen & Dining</button>
+          <button data-category="travel">On the Go</button>
+          <button data-category="desk">Desk & Tech</button>
+        </div>
+        <div class="footer-col">
+          <h3>Here to help</h3>
+          <a href="#faq">FAQs</a>
+          <button data-policy="shipping">Shipping & delivery</button>
+          <button data-policy="returns">Returns & refunds</button>
+          <button data-policy="payments">Payments & COD</button>
+          <button data-policy="contact">Contact & support</button>
+        </div>
+        <div class="footer-col">
+          <h3>The finer details</h3>
+          <a href="#approach">Our approach</a>
+          <button data-policy="privacy">Privacy policy</button>
+          <button data-policy="terms">Terms of service</button>
+          <button data-policy="accessibility">Accessibility</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> daygood. All prices in INR.<br>Storefront preview. Illustrative catalog & policies. Checkout is not live.</p>
+        <div class="payment-badges"><small>Planned payment options</small><span>UPI</span><span>VISA</span><span>Mastercard</span><span>COD</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="searchDialog" aria-labelledby="searchTitle">
+    <div class="modal-shell">
+      <div class="modal-header"><h2 id="searchTitle">Find your everyday.</h2><button class="icon-button" data-close aria-label="Close search"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="search-box"><svg class="icon"><use href="#i-search"/></svg><label class="sr-only" for="searchInput">Search products or categories</label><input id="searchInput" type="search" placeholder="Try a mug, a lamp, a little upgrade…" autocomplete="off"></div>
+      <p class="search-meta" id="searchMeta">A few good places to start</p>
+      <div id="searchResults" class="search-results" aria-live="polite"></div>
+    </div>
+  </dialog>
+
+  <dialog id="cartDialog" aria-labelledby="cartTitle">
+    <div class="cart-shell">
+      <div class="modal-header"><h2 id="cartTitle">Your bag <span id="cartTitleCount">(0)</span></h2><button class="icon-button" data-close aria-label="Close shopping bag"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="cart-preview-label"><svg class="icon"><use href="#i-info"/></svg> A little good, picked by you. Store preview.</div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-summary" id="cartSummary"></div>
+    </div>
+  </dialog>
+
+  <dialog class="product-dialog" id="productDialog" aria-labelledby="productTitle">
+    <div id="productContent"></div>
+  </dialog>
+
+  <dialog id="policyDialog" aria-labelledby="policyTitle">
+    <div class="modal-shell">
+      <div class="modal-header"><h2 id="policyTitle"></h2><button class="icon-button" data-close aria-label="Close policy"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="policy-note">Storefront preview · These are proposed launch policies, not a live sales agreement. Seller identity, support contacts, and fulfillment arrangements must be finalized before accepting orders.</div>
+      <div class="policy-content" id="policyContent"></div>
+    </div>
+  </dialog>
+
+  <dialog id="checkoutDialog" aria-labelledby="checkoutTitle">
+    <div class="modal-shell">
+      <div class="modal-header"><h2 id="checkoutTitle">The final little details.</h2><button class="icon-button" data-close aria-label="Close checkout"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div id="checkoutContent"></div>
+    </div>
+  </dialog>
+
+  <dialog id="reviewDialog" aria-labelledby="reviewTitle">
+    <div class="modal-shell">
+      <div class="modal-header"><h2 id="reviewTitle">Your honest opinion.</h2><button class="icon-button" data-close aria-label="Close review form"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <p class="modal-description">There are no published reviews yet. Reviews aren’t live in this preview, but you can save a private draft on this device. It won’t be published or marked as a verified purchase.</p>
+      <form id="reviewForm">
+        <div class="field"><label for="reviewProduct">Choose a product</label><select id="reviewProduct" required></select></div>
+        <div class="form-row">
+          <div class="field"><label for="reviewName">First name</label><input id="reviewName" required maxlength="40" placeholder="Your first name" autocomplete="given-name"></div>
+          <div class="field"><label for="reviewRating">Your rating</label><select id="reviewRating" required><option value="">Select a rating</option value="5">5 — Excellent</option><option value="4">4 — Good</option><option value="3">3 — Okay</option><option value="2">2 — Disappointing</option><option value="1">1 — Poor</option></select></div>
+        </div>
+        <div class="field"><label for="reviewText">Your experience</label><textarea id="reviewText" required minlength="10" maxlength="2000" placeholder="What worked for you? What could be better?"></textarea></div>
+        <button type="submit" class="btn">Save private draft <svg class="icon"><use href="#i-arrow"/></svg></button>
+        <p id="reviewStatus" class="form-status" role="status"></p>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog id="menuDialog" aria-labelledby="menuTitle">
+    <div class="modal-shell">
+      <div class="modal-header"><h2 id="menuTitle">A little exploring.</h2><button class="icon-button" data-close aria-label="Close menu"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#best-sellers" data-shop-all data-menu-close>Shop all finds ↗</a>
+        <a href="#best-sellers" data-shortlist data-menu-close>Best Sellers</a>
+        <a href="#approach" data-menu-close>Our approach</a>
+        <p>FIND YOUR CORNER</p>
+        <button class="small-nav" data-category="home">Home & Living</button>
+        <button class="small-nav" data-category="kitchen">Kitchen & Dining</button>
+        <button class="small-nav" data-category="travel">On the Go</button>
+        <button class="small-nav" data-category="desk">Desk & Tech</button>
+        <a class="small-nav" href="#faq" data-menu-close>FAQs & helpful details</a>
+      </nav>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><svg class="icon"><use href="#i-check"/></svg><span class="toast-message" id="toastMessage"></span><button id="toastAction" onclick="openCart()">View bag</button></div>
+
+  <script>
+    'use strict';
+    const icon = (name, cls = '') => `<svg class="icon ${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
+    const money = value => '₹' + value.toLocaleString('en-IN');
+    const escapeHTML = str => String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const imageURL = (id, width = 700) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
+    const products = [
+      {id:'daily-bottle', name:'The Daily Carry Bottle', price:799, category:'travel', categoryName:'On the Go', image:'photo-1602143407151-7111542de6e8', tag:'Everyday essential', description:'Your water-break companion, from the morning commute to a slower afternoon. A simple, reusable bottle with an easy-carry shape and a screw-top lid.', features:['Easy-to-carry everyday format','Reusable, screw-top design','A useful addition to your daily bag'], specs:{'Format':'Reusable bottle','Intended use':'Everyday hydration','Included':'1 bottle with lid','Care':'Hand wash; dry with lid off'}},
+      {id:'morning-mug', name:'The Slow Morning Mug', price:449, category:'kitchen', categoryName:'Kitchen & Dining', image:'photo-1514228742587-6b1558fcca3d', tag:'Slow mornings', description:'A good morning starts with a familiar ritual. This simple ceramic mug brings a little warmth to your coffee, tea, or well-deserved five-minute break.', features:['Comfortable, easy-grip handle','A simple ceramic silhouette','For coffee, chai, and slower moments'], specs:{'Material':'Ceramic','Included':'1 mug','Intended use':'Hot or cold drinks','Care':'Gentle hand washing recommended'}},
+      {id:'corner-lamp', name:'The Warm Corner Lamp', price:1499, category:'home', categoryName:'Home & Living', image:'photo-1507473885765-e6ed057f782c', tag:'A softer kind of light', description:'Give a bedside table, reading spot, or quiet corner its own little moment. A minimal table lamp for a room that feels more like you.', features:['Tabletop lighting for smaller spaces','An understated, sculptural shape','Designed for a bedside or reading corner'], specs:{'Product type':'Table lamp','Included':'1 lamp; bulb not included','Placement':'Indoor, dry locations','Electrical details':'Must be confirmed before purchase'}},
+      {id:'everyday-daypack', name:'The Everyday Daypack', price:1299, category:'travel', categoryName:'On the Go', image:'photo-1553062407-98eeb64c6a62', tag:'Out & about', description:'For the things that come along for the day. An uncomplicated backpack with a roomy main compartment and a shape that works beyond the commute.', features:['Zipped main compartment','Adjustable shoulder straps','An everyday, hands-free carry'], specs:{'Product type':'Backpack','Included':'1 daypack','Intended use':'Commutes and casual outings','Care':'Spot clean; air dry'}},
+      {id:'quiet-evening-candle', name:'The Quiet Evening Candle', price:599, category:'home', categoryName:'Home & Living', image:'photo-1603006905003-be475563bc59', tag:'Time to unwind', description:'A small ritual for the end of a long day. Set the phone aside, find a comfortable spot, and add a gentle candlelit glow to your evening.', features:['A simple decorative candle','A thoughtful addition to a quiet corner','Place on a heat-resistant surface'], specs:{'Product type':'Container candle','Included':'1 candle','Scent & wax':'To be confirmed before launch','Safety':'Never leave a flame unattended'}},
+      {id:'morning-coffee-edit', name:'The Morning Coffee Edit', price:1199, category:'kitchen', categoryName:'Kitchen & Dining', image:'photo-1495474472287-4d71bcdd2085', tag:'Make it a ritual', description:'Make a little time for the morning cup. A coffee-focused tabletop edit for unhurried weekends and the everyday ritual in between.', features:['A coffee-inspired tabletop selection','For a considered morning setup','Final bundle contents confirmed at launch'], specs:{'Collection':'Coffee accessories','Bundle contents':'To be confirmed before launch','Coffee beans':'Not included','Care':'Follow the final item care guides'}},
+      {id:'everyday-headphones', name:'The Everyday Headphones', price:1999, category:'desk', categoryName:'Desk & Tech', image:'photo-1505740420928-5e560c06d30e', tag:'Find your focus', description:'A place for your favourite playlists and everyday listening. A clean, over-ear headphone design for the moments you want a little more focus.', features:['Over-ear headphone format','Cushioned ear cups','For everyday personal listening'], specs:{'Product type':'Over-ear headphones','Included':'1 pair of headphones','Connectivity':'To be confirmed before purchase','Warranty':'Final supplier terms required'}},
+      {id:'blank-page-notebook', name:'The Blank Page Notebook', price:349, category:'desk', categoryName:'Desk & Tech', image:'photo-1531346878377-a5be20888e57', tag:'Room for a good idea', description:'For the lists, the little thoughts, and the ideas worth keeping. An uncomplicated notebook to make a little room away from the screen.', features:['Easy, everyday note-taking','A simple addition to your desk','For plans, thoughts, and to-do lists'], specs:{'Product type':'Notebook','Included':'1 notebook','Page size & ruling':'To be confirmed before launch','Care':'Keep dry'}}
+    ];
+    const productById = id => products.find(p => p.id === id);
+    function readStorage(key, fallback) {
+      try { const result = localStorage.getItem(key); return result ? JSON.parse(result) : fallback; }
+      catch (_) { return fallback; }
+    }
+    function writeStorage(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); return true; }
+      catch (_) { return false; }
+    }
+
+    let storedCart = readStorage('daygood-cart', {});
+    let cart = {};
+    if (storedCart && typeof storedCart === 'object' && !Array.isArray(storedCart)) {
+      for (const [id, qty] of Object.entries(storedCart)) {
+        if (productById(id) && Number.isInteger(qty) && qty > 0) cart[id] = Math.min(qty, 99);
+      }
+    }
+    const rawSaved = readStorage('daygood-saved', []);
+    let saved = new Set(Array.isArray(rawSaved) ? rawSaved.filter(id => productById(id)) : []);
+    let reviewDrafts = readStorage('daygood-review-drafts', {});
+    if (!reviewDrafts || typeof reviewDrafts !== 'object' || Array.isArray(reviewDrafts)) reviewDrafts = {};
+    let activeFilter = 'all';
+    let showAll = false;
+    let detailQuantity = 1;
+    let currentProduct = null;
+    let toastTimer;
+    let toastHost = null;
+
+    function countCart() { return Object.values(cart).reduce((sum, n) => sum + n, 0); }
+    function subtotal() { return Object.entries(cart).reduce((sum, [id, qty]) => sum + productById(id).price * qty, 0); }
+
+    function showToast(message, withBag = false) {
+      const toast = document.getElementById('toast');
+      const currentDialog = document.querySelector('dialog[open]');
+      if (currentDialog) {
+        currentDialog.appendChild(toast);
+        toastHost = currentDialog;
+      } else {
+        document.body.appendChild(toast);
+        toastHost = null;
+      }
+      document.getElementById('toastMessage').textContent = message;
+      document.getElementById('toastAction').hidden = !withBag;
+      toast.classList.add('visible');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('visible'), 3400);
+    }
+
+    function openModal(id) {
+      const target = document.getElementById(id);
+      document.querySelectorAll('dialog[open]').forEach(dialog => { if (dialog !== target) dialog.close(); });
+      if (!target.open) target.showModal();
+      document.body.style.overflow = 'hidden';
+    }
+
+    document.querySelectorAll('dialog').forEach(dialog => {
+      dialog.addEventListener('click', event => {
+        if (event.target === dialog) {
+          const rect = dialog.getBoundingClientRect();
+          if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+        }
+      });
+      dialog.addEventListener('close', () => {
+        if (toastHost === dialog) {
+          const toast = document.getElementById('toast');
+          toast.classList.remove('visible');
+          document.body.appendChild(toast);
+          toastHost = null;
+        }
+        if (dialog.id === 'productDialog' && location.hash.startsWith('#product/')) {
+          history.replaceState(null, '', location.pathname + location.search + '#best-sellers');
+        }
+        if (dialog.id === 'checkoutDialog') {
+          const form = document.getElementById('checkoutForm');
+          if (form) form.reset();
+        }
+        setTimeout(() => {
+          if (!document.querySelector('dialog[open]')) document.body.style.overflow = '';
+        }, 0);
+      });
+    });
+
+    function renderProducts() {
+      const filtered = products.filter(p => activeFilter === 'all' || p.category === activeFilter);
+      const visible = activeFilter === 'all' && !showAll ? filtered.slice(0, 4) : filtered;
+      document.getElementById('productGrid').innerHTML = visible.map((p, index) => `
+        <article class="product-card" style="animation-delay:${index * 35}ms">
+          <div class="product-visual">
+            <a class="product-image" href="#product/${p.id}" aria-label="View ${p.name}">
+              <img src="${imageURL(p.image)}" alt="${p.name} — illustrative product photograph" loading="lazy">
+            </a>
+            <span class="product-tag">${p.tag}</span>
+            <button class="save-button ${saved.has(p.id) ? 'saved' : ''}" data-save="${p.id}" aria-pressed="${saved.has(p.id)}" aria-label="${saved.has(p.id) ? 'Unsave' : 'Save'} ${p.name}">${icon('heart')}</button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">${p.categoryName}</p>
+            <a class="product-name" href="#product/${p.id}">${p.name}</a>
+            <div class="product-bottom"><span class="product-price">${money(p.price)}</span><button class="quick-add" data-add="${p.id}" aria-label="Add ${p.name} to bag">${icon('plus')}</button></div>
+          </div>
+        </article>
+      `).join('');
+      document.getElementById('itemCount').textContent = `${visible.length} considered finds`;
+      document.querySelectorAll('[data-filter]').forEach(button => {
+        const active = button.dataset.filter === activeFilter;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      document.getElementById('collectionToggle').innerHTML =
+        showAll && activeFilter === 'all' ? `Back to the shortlist ${icon('arrow')}` : `See all 8 finds ${icon('arrow')}`;
+    }
+
+    function setCategory(category, scroll = true) {
+      activeFilter = category;
+      showAll = true;
+      document.getElementById('menuDialog').close();
+      renderProducts();
+      if (scroll) document.getElementById('best-sellers').scrollIntoView({behavior:'smooth'});
+    }
+
+    function persistCart() {
+      writeStorage('daygood-cart', cart);
+      document.getElementById('bagCount').textContent = countCart();
+      renderCart();
+    }
+
+    function addToCart(id, quantity = 1) {
+      const p = productById(id);
+      if (!p) return;
+      if ((cart[id] || 0) + quantity > 99) {
+        showToast('You can add up to 99 of this item.');
+        return;
+      }
+      cart[id] = (cart[id] || 0) + quantity;
+      persistCart();
+      showToast(`${quantity > 1 ? quantity + ' × ' : ''}${p.name} added.`, true);
+    }
+
+    function renderCart() {
+      const count = countCart();
+      document.getElementById('cartTitleCount').textContent = `(${count})`;
+      document.getElementById('bagCount').textContent = count;
+      const items = document.getElementById('cartItems');
+      const summary = document.getElementById('cartSummary');
+      if (!count) {
+        items.innerHTML = `<div class="empty-state">${icon('bag')}<h3>A little room for good.</h3><p>Your bag is empty. Let’s find something<br>to make your everyday a little better.</p><button class="btn" id="emptyShop">Explore the edit ${icon('arrow')}</button></div>`;
+        summary.hidden = true;
+        return;
+      }
+      summary.hidden = false;
+      items.innerHTML = Object.entries(cart).map(([id, qty]) => {
+        const p = productById(id);
+        return `<article class="cart-item">
+          <a class="cart-item-image" href="#product/${id}" aria-label="View ${p.name}"><img src="${imageURL(p.image, 250)}" alt="${p.name}"></a>
+          <div>
+            <div class="cart-item-heading"><a href="#product/${id}"><h3>${p.name}</h3></a><button class="remove-item" data-remove="${id}" aria-label="Remove ${p.name}">${icon('close')}</button></div>
+            <p class="cart-item-category">${p.categoryName} · ${money(p.price)} each</p>
+            <div class="cart-item-bottom"><div class="quantity-control"><button data-qty="${id}" data-delta="-1" aria-label="Decrease ${p.name} quantity">${icon('minus')}</button><span aria-label="Quantity">${qty}</span><button data-qty="${id}" data-delta="1" aria-label="Increase ${p.name} quantity" ${qty >= 99 ? 'disabled' : ''}>${icon('plus')}</button></div><strong>${money(p.price * qty)}</strong></div>
+          </div>
+        </article>`;
+      }).join('');
+      summary.innerHTML = `<div class="total-row"><span>Subtotal</span><span>${money(subtotal())}</span></div>
+        <p>Illustrative prices include applicable taxes. Delivery charges and any COD fee must be confirmed before ordering.</p>
+        <button class="btn" id="checkoutButton">Continue to checkout ${icon('arrow')}</button>
+        <p class="cart-payment-note">${icon('lock')} Preview only · No payment will be taken</p>`;
+    }
+
+    function openCart() {
+      renderCart();
+      openModal('cartDialog');
+    }
+
+    function openSearch() {
+      document.getElementById('searchInput').value = '';
+      renderSearch('');
+      openModal('searchDialog');
+      setTimeout(() => document.getElementById('searchInput').focus(), 70);
+    }
+
+    function renderSearch(query) {
+      const value = query.trim().toLowerCase();
+      const results = value ? products.filter(p => `${p.name} ${p.categoryName} ${p.description}`.toLowerCase().includes(value)) : products.slice(0, 4);
+      document.getElementById('searchMeta').textContent = value ? `${results.length} ${results.length === 1 ? 'find' : 'finds'} for “${query.trim()}”` : 'A few good places to start';
+      document.getElementById('searchResults').innerHTML = results.length ? results.map(p => `<a href="#product/${p.id}" class="search-result"><span class="search-thumb"><img src="${imageURL(p.image, 200)}" alt=""></span><span><strong>${p.name}</strong><small>${p.categoryName}</small></span><span>${money(p.price)}</span></a>`).join('') : `<div class="empty-state">${icon('search')}<h3>No finds, just yet.</h3><p>Try “mug”, “home”, “bottle”, or “desk”.</p><button class="btn btn-outline" id="resetSearch">Explore all finds</button></div>`;
+    }
+    document.getElementById('searchInput').addEventListener('input', event => renderSearch(event.target.value));
+
+    function openProduct(id) {
+      const p = productById(id);
+      if (!p) return;
+      currentProduct = p;
+      detailQuantity = 1;
+      const draft = reviewDrafts[id];
+      const validDraft = draft && typeof draft.body === 'string' && typeof draft.name === 'string' && Number(draft.rating) >= 1 && Number(draft.rating) <= 5;
+      document.getElementById('productContent').innerHTML = `
+        <div class="product-modal-top"><div class="breadcrumb"><span>Shop</span>${icon('chevron')}<span>${p.categoryName}</span></div><button class="icon-button" data-close aria-label="Close product details">${icon('close')}</button></div>
+        <div class="product-detail-grid">
+          <div class="detail-image"><img src="${imageURL(p.image, 1100)}" alt="${p.name} — illustrative image"></div>
+          <div class="detail-info">
+            <p class="detail-category">${p.categoryName} / ${p.tag}</p>
+            <h2 id="productTitle">${p.name}</h2>
+            <p class="detail-price">${money(p.price)}</p>
+            <p class="tax-note">Illustrative price · Inclusive of applicable taxes</p>
+            <button class="review-jump" id="jumpToReviews">No customer reviews yet · See reviews</button>
+            <p class="detail-description">${p.description}</p>
+            <ul class="detail-feature-list">${p.features.map(feature => `<li>${icon('check')}${feature}</li>`).join('')}</ul>
+            <div class="detail-add-row"><div class="quantity-control"><button data-detail-qty="-1" aria-label="Decrease quantity" id="detailMinus" disabled>${icon('minus')}</button><span id="detailQuantity">1</span><button data-detail-qty="1" aria-label="Increase quantity" id="detailPlus">${icon('plus')}</button></div><button class="btn" data-add="${p.id}" data-detail-add>Add to bag ${icon('bag')}</button></div>
+            <form class="delivery-check" id="pincodeForm">
+              <label for="productPincode">${icon('truck')} Delivery & COD availability</label>
+              <div class="pincode-field"><input id="productPincode" type="text" inputmode="numeric" pattern="[1-9][0-9]{5}" maxlength="6" placeholder="Enter 6-digit pincode" title="Enter a six-digit Indian pincode beginning with 1–9" required><button type="submit">Check</button></div>
+              <p class="delivery-result" id="deliveryResult" role="status">Pincode format check only. Live delivery lookup is not connected.</p>
+            </form>
+          </div>
+        </div>
+        <div class="detail-bottom">
+          <p class="catalog-note">${icon('info', 'icon-sm')} Preview catalog: imagery, specifications, and prices are illustrative. Final materials, dimensions, safety information, country of origin, manufacturer/importer details, warranty, and delivery terms must be confirmed before purchase.</p>
+          <section class="detail-specs"><h3>The useful details</h3><div class="spec-grid">${Object.entries(p.specs).map(([label, value]) => `<div class="spec-row"><span>${label}</span><strong>${value}</strong></div>`).join('')}</div></section>
+          <section class="detail-reviews" id="detailReviews"><h3>Customer reviews <span style="color:var(--muted);font-size:12px">(0)</span></h3><p>No published reviews yet. We don’t invent ratings or label unverified feedback as a purchase.</p>
+          ${validDraft ? `<div class="draft-review"><small>YOUR PRIVATE DRAFT · NOT PUBLISHED OR VERIFIED</small><strong>${escapeHTML(draft.name)} · ${Number(draft.rating)}/5</strong><p>${escapeHTML(draft.body)}</p></div>` : ''}
+          <button class="btn btn-outline" data-review="${p.id}">${validDraft ? 'Edit your private draft' : 'Write a review draft'} ${icon('arrow')}</button></section>
+        </div>`;
+      openModal('productDialog');
+      document.getElementById('productDialog').scrollTop = 0;
+      document.getElementById('pincodeForm').addEventListener('submit', event => {
+        event.preventDefault();
+        document.getElementById('deliveryResult').textContent = 'Valid pincode format. Actual serviceability, COD eligibility, delivery dates, and fees must be confirmed at live checkout. No live lookup was performed.';
+      });
+      document.getElementById('jumpToReviews').addEventListener('click', () => document.getElementById('detailReviews').scrollIntoView({behavior:'smooth',block:'start'}));
+    }
+
+    const policies = {
+      shipping: {
+        title:'Shipping & delivery',
+        content:`<p>We want you to know the delivery details before committing to an order. This is the proposed policy for our India storefront.</p><h3>Availability and charges</h3><p>Delivery will depend on your pincode, the selected product, and supplier serviceability. Shipping charges and a product-specific estimated delivery window must be shown before payment. There is no blanket free-shipping promise.</p><h3>Supplier fulfillment</h3><p>Products may be shipped directly by third-party suppliers. If your order includes goods from multiple suppliers, it may arrive in separate parcels. The seller remains your point of responsibility for order support.</p><h3>Dispatch and tracking</h3><p>Processing and transit times will be specified for each product at launch. After dispatch, a tracking link should be supplied when the carrier supports tracking. Estimated dates are not guaranteed and may be affected by service disruptions.</p><h3>Damaged or missing parcels</h3><p>Contact the published support channel promptly if a parcel is missing, visibly damaged, or incomplete. Photos can help with investigation, but an unboxing video will not be the sole condition for considering a claim.</p><h3>Preview status</h3><p>No carrier, supplier, or live pincode service is connected here. No order can be dispatched from this demonstration.</p>`
+      },
+      returns: {
+        title:'Returns & refunds',
+        content:`<p>The following is a proposed launch policy. Product-specific restrictions must be visible before purchase, and applicable consumer rights are not excluded.</p><h3>7-day return request window</h3><p>For eligible change-of-mind returns, request a return within 7 calendar days of delivery. Items should be unused, with original packaging, tags, and included accessories. Approval and pickup instructions will be sent through the store’s verified support channel.</p><h3>Damaged, defective, or wrong items</h3><p>Please report the issue as soon as reasonably possible with your order number and a description. Helpful photographs may be requested. Depending on the issue and applicable law, a replacement, repair, or refund will be offered. An unboxing video is not mandatory.</p><h3>Exclusions and return costs</h3><p>Personalized items, opened hygiene-sensitive products, and used consumables may be excluded from change-of-mind returns when disclosed on the product page. Defective-item rights still apply. The seller should cover return costs for wrong, damaged, or defective goods; any change-of-mind pickup fee must be disclosed before purchase.</p><h3>Refunds</h3><p>After the return is approved and any necessary inspection is complete, refunds should be initiated within 5–7 business days. Bank or provider processing may take additional time. Prepaid refunds go to the original payment method where possible. COD refunds use a customer-approved bank or UPI transfer—never a request for a PIN or OTP.</p><h3>Cancellations</h3><p>Request cancellation before dispatch. Once dispatched, the return process may apply. Final operational timelines and the seller’s support contacts must be published before launch.</p>`
+      },
+      payments: {
+        title:'Payments & COD',
+        content:`<h3>Online payments</h3><p>UPI, supported debit/credit cards, and netbanking are planned through a payment provider. Available methods will depend on the live provider configuration. This preview does not collect card details or connect to a payment gateway.</p><h3>Cash on delivery</h3><p>COD is subject to pincode, carrier, product, and order-value eligibility. Any fee or maximum order limit must be disclosed before you confirm your order. Selecting COD in this preview does not establish actual eligibility.</p><h3>Pricing and taxes</h3><p>Catalog prices are shown in Indian rupees and are illustrative. Live listings must disclose the final price, applicable tax treatment, shipping, and any COD charges before the order is confirmed. No undisclosed amount should be added after confirmation.</p><h3>Safe payment habits</h3><p>Never share an OTP, card PIN, or UPI PIN with support staff. Receiving a refund does not require entering a UPI PIN. Pay only through the store’s live checkout or the authorized delivery partner for a confirmed COD order.</p>`
+      },
+      privacy: {
+        title:'Privacy policy',
+        content:`<p>This policy describes what this specific storefront preview does with information. A live store will require an updated notice naming the legal seller and relevant service providers.</p><h3>Information stored on your device</h3><p>Your bag, saved products, and private review drafts are stored in your browser’s local storage. A review draft contains the first name, rating, and text that you enter. These are not uploaded or published by this page.</p><h3>Forms and payments</h3><p>Checkout details exist only in the current page session and are not submitted to a server. They are cleared when checkout closes. The newsletter form does not subscribe you, transmit your email, or save it. No payment credentials are collected.</p><h3>External resources</h3><p>Images are served by Unsplash and fonts by Google Fonts. Those providers receive ordinary connection information, such as your IP address, when their resources load. Their own privacy notices apply to their services. No advertising or analytics scripts are included in this page.</p><h3>Your control</h3><p>You can remove cart items and unsave products individually, or delete all local information through your browser’s site-data settings. Private drafts are not publicly visible but may be accessible to other people using the same browser profile.</p><h3>Before launch</h3><p>The legal seller must publish its identity, contact details, data purposes, retention periods, processors, and an appropriate channel for privacy requests and grievances, consistent with applicable Indian law.</p>`
+      },
+      terms: {
+        title:'Terms of service',
+        content:`<h3>Demonstration only</h3><p>This page is an interactive storefront preview, not a live offer to sell. Product images, prices, copy, and specifications are illustrative. Adding goods to the bag or creating an order preview does not place an order or create a sales contract.</p><h3>Product information</h3><p>Before launch, every listing must be checked for accurate photographs, materials, dimensions, safety instructions, manufacturer/importer information, country of origin, statutory declarations, warranty, and supplier availability. No sales rankings or customer ratings are represented as verified in this preview.</p><h3>Orders and acceptance</h3><p>For a future live store, order acceptance, payment confirmation, cancellation handling, and supplier stock checks must be clearly defined. Errors should be resolved with the customer rather than silently changing an order.</p><h3>Seller responsibility</h3><p>Third-party fulfillment does not remove the seller’s responsibility for accurate listings, customer support, returns, refunds, or applicable consumer protections. Mandatory legal rights cannot be excluded by these proposed terms.</p><h3>Required business disclosures</h3><p>The legal business name, registered address, verified support contacts, grievance contact, and applicable tax registrations must be published before collecting payments or accepting orders. This preview does not assert a real trading entity or invent those details.</p>`
+      },
+      contact: {
+        title:'Here to help.',
+        content:`<p>Clear answers and a real support channel are part of a good shopping experience.</p><h3>This is a storefront preview</h3><p>Customer service is not connected, and no actual orders are accepted. We have not invented a support email, phone number, address, or grievance officer.</p><h3>Before the store launches</h3><p>The verified business name, registered address, customer-support email and phone, operating hours, and grievance contact must be published here.</p><h3>Looking for an answer now?</h3><p>The FAQ, shipping policy, returns policy, and payment information explain how the proposed shopping experience is intended to work. You can explore products, edit your bag, and create a local order preview without making a payment.</p><h3>Order-related support</h3><p>Once live, contact support with your order number and a concise description of the issue. Never include passwords, card details, OTPs, or UPI PINs in a message.</p>`
+      },
+      accessibility: {
+        title:'A store for everyone.',
+        content:`<p>This preview is designed with semantic page regions, keyboard-accessible controls, visible focus indicators, labelled forms, and responsive layouts.</p><h3>Getting around</h3><p>Use the skip link at the top of the page to move directly to the main content. Tab moves between controls. Escape closes an open dialog. Product search is also available with Ctrl+K or Command+K.</p><h3>Motion and zoom</h3><p>Animations are disabled when your system requests reduced motion. The layout adapts to narrow viewports, and browser zoom remains available.</p><h3>Continuous improvement</h3><p>No independent accessibility certification is claimed. Before launch, the store should undergo keyboard, screen-reader, contrast, and device testing, and publish a verified contact for accessibility feedback.</p>`
+      }
+    };
+
+    function openPolicy(key) {
+      const policy = policies[key];
+      if (!policy) return;
+      document.getElementById('policyTitle').textContent = policy.title;
+      document.getElementById('policyContent').innerHTML = policy.content;
+      openModal('policyDialog');
+      document.getElementById('policyDialog').scrollTop = 0;
+    }
+
+    function openReview(productId) {
+      document.getElementById('reviewForm').reset();
+      document.getElementById('reviewStatus').textContent = '';
+      document.getElementById('reviewProduct').innerHTML = products.map(p => `<option value="${p.id}">${p.name}</option>`).join('');
+      if (productById(productId)) document.getElementById('reviewProduct').value = productId;
+      loadReviewDraft();
+      openModal('reviewDialog');
+    }
+
+    function loadReviewDraft() {
+      const draft = reviewDrafts[document.getElementById('reviewProduct').value];
+      document.getElementById('reviewName').value = draft && typeof draft.name === 'string' ? draft.name : '';
+      document.getElementById('reviewRating').value = draft ? String(draft.rating || '') : '';
+      document.getElementById('reviewText').value = draft && typeof draft.body === 'string' ? draft.body : '';
+      document.getElementById('reviewStatus').textContent = '';
+    }
+    document.getElementById('reviewProduct').addEventListener('change', loadReviewDraft);
+    document.getElementById('reviewForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const productId = document.getElementById('reviewProduct').value;
+      const name = document.getElementById('reviewName').value.trim();
+      const body = document.getElementById('reviewText').value.trim();
+      if (!name || body.length < 10) {
+        document.getElementById('reviewStatus').textContent = 'Please include your name and at least 10 characters of feedback.';
+        return;
+      }
+      reviewDrafts[productId] = {name, body, rating:Number(document.getElementById('reviewRating').value)};
+      const persisted = writeStorage('daygood-review-drafts', reviewDrafts);
+      document.getElementById('reviewStatus').textContent = persisted
+        ? `Your private draft for ${productById(productId).name} is saved on this device. It has not been published or verified.`
+        : 'Your draft is available for this session. Browser storage is unavailable, so it will not be kept after you leave.';
+    });
+
+    function openCheckout() {
+      if (!countCart()) return;
+      document.getElementById('checkoutTitle').textContent = 'The final little details.';
+      document.getElementById('checkoutContent').innerHTML = `
+        <div class="checkout-notice">${icon('info')}<div><strong>You’re exploring a store preview.</strong>No order will be placed and no payment will be collected. Use sample details. Nothing entered here is sent to a server.</div></div>
+        <form class="checkout-form" id="checkoutForm">
+          <h3 class="checkout-section-title">1. Delivery details · India</h3>
+          <div class="form-row">
+            <div class="field"><label for="checkoutName">Full name</label><input id="checkoutName" required maxlength="90" autocomplete="name" placeholder="Your name"></div>
+            <div class="field"><label for="checkoutPhone">Mobile number</label><input id="checkoutPhone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="Enter a valid 10-digit Indian mobile number" autocomplete="tel-national" placeholder="10-digit Indian number" required></div>
+          </div>
+          <div class="field"><label for="checkoutAddress">Street address</label><input id="checkoutAddress" required minlength="5" maxlength="200" autocomplete="street-address" placeholder="House / flat, street, area"></div>
+          <div class="form-row">
+            <div class="field"><label for="checkoutCity">City</label><input id="checkoutCity" required maxlength="70" autocomplete="address-level2" placeholder="City"></div>
+            <div class="field"><label for="checkoutPin">Pincode</label><input id="checkoutPin" required type="text" inputmode="numeric" pattern="[1-9][0-9]{5}" maxlength="6" title="Enter a valid six-digit Indian pincode" autocomplete="postal-code" placeholder="6-digit pincode"></div>
+          </div>
+          <h3 class="checkout-section-title">2. Preferred payment method</h3>
+          <label class="payment-option"><input type="radio" name="payment" value="online" checked><span>UPI, cards, or netbanking<small>Gateway not connected. No payment details requested.</small></span>${icon('shield')}</label>
+          <label class="payment-option"><input type="radio" name="payment" value="cod"><span>Cash on delivery<small>Subject to actual serviceability, order value, and any disclosed fee.</small></span>${icon('cash')}</label>
+          <h3 class="checkout-section-title">3. Your bag · ${countCart()} ${countCart() === 1 ? 'item' : 'items'}</h3>
+          <div class="checkout-totals">
+            ${Object.entries(cart).map(([id, qty]) => `<div><span>${productById(id).name} × ${qty}</span><span>${money(productById(id).price * qty)}</span></div>`).join('')}
+            <div><span>Shipping / COD fee</span><span>Not calculated in preview</span></div>
+            <div><span>Product subtotal</span><span>${money(subtotal())}</span></div>
+          </div>
+          <button type="submit" class="btn">Create order preview ${icon('arrow')}</button>
+          <p class="checkout-legal">An order preview is not a purchase. Final charges must be disclosed before a live order.<br>Read our <button type="button" data-policy="privacy">privacy policy</button> and <button type="button" data-policy="terms">terms</button>.</p>
+        </form>`;
+      openModal('checkoutDialog');
+      document.getElementById('checkoutDialog').scrollTop = 0;
+      document.getElementById('checkoutForm').addEventListener('submit', event => {
+        event.preventDefault();
+        const payment = new FormData(event.target).get('payment');
+        const total = subtotal();
+        const count = countCart();
+        event.target.reset();
+        document.getElementById('checkoutTitle').textContent = 'Your everyday edit.';
+        document.getElementById('checkoutContent').innerHTML = `
+          <div class="empty-state" style="padding-top:10px">
+            <div class="success-symbol">${icon('check')}</div>
+            <h3>Your preview is ready.</h3>
+            <p>${count} ${count === 1 ? 'item' : 'items'} · ${money(total)} product subtotal<br>${payment === 'cod' ? 'COD preference selected; eligibility not confirmed.' : 'Online payment preference selected; gateway not connected.'}</p>
+            <div class="checkout-notice" style="text-align:left"><div><strong>No order was placed. No payment was taken.</strong>This is a local demonstration, not an order confirmation. Shipping and fees are unconfirmed. Your delivery details were not sent to a server, and your bag is still here.</div></div>
+            <button class="btn" data-close>Keep exploring ${icon('arrow')}</button>
+          </div>`;
+        document.getElementById('checkoutDialog').scrollTop = 0;
+      });
+    }
+
+    document.addEventListener('click', event => {
+      const closeButton = event.target.closest('[data-close]');
+      if (closeButton) closeButton.closest('dialog').close();
+
+      const add = event.target.closest('[data-add]');
+      if (add) addToCart(add.dataset.add, add.hasAttribute('data-detail-add') ? detailQuantity : 1);
+
+      const save = event.target.closest('[data-save]');
+      if (save) {
+        const id = save.dataset.save;
+        saved.has(id) ? saved.delete(id) : saved.add(id);
+        const persisted = writeStorage('daygood-saved', [...saved]);
+        save.classList.toggle('saved', saved.has(id));
+        save.setAttribute('aria-pressed', String(saved.has(id)));
+        save.setAttribute('aria-label', `${saved.has(id) ? 'Unsave' : 'Save'} ${productById(id).name}`);
+        showToast(saved.has(id) ? (persisted ? 'Saved to this browser. A good find for later.' : 'Saved for this session.') : 'Removed from your saved finds.');
+      }
+
+      const category = event.target.closest('[data-category]');
+      if (category) setCategory(category.dataset.category);
+
+      const filter = event.target.closest('[data-filter]');
+      if (filter) setCategory(filter.dataset.filter, false);
+
+      const shopAll = event.target.closest('[data-shop-all]');
+      if (shopAll) { showAll = true; activeFilter = 'all'; renderProducts(); }
+
+      const shortlist = event.target.closest('[data-shortlist]');
+      if (shortlist) { showAll = false; activeFilter = 'all'; renderProducts(); }
+
+      const showAllButton = event.target.closest('[data-show-all]');
+      if (showAllButton) {
+        showAll = showAllButton.id === 'collectionToggle' && showAll && activeFilter === 'all' ? false : true;
+        activeFilter = 'all';
+        renderProducts();
+      }
+
+      const changeQty = event.target.closest('[data-qty]');
+      if (changeQty) {
+        const id = changeQty.dataset.qty;
+        cart[id] = Math.max(0, Math.min(99, (cart[id] || 0) + Number(changeQty.dataset.delta)));
+        if (cart[id] === 0) delete cart[id];
+        persistCart();
+      }
+
+      const remove = event.target.closest('[data-remove]');
+      if (remove) { delete cart[remove.dataset.remove]; persistCart(); }
+
+      const detailQty = event.target.closest('[data-detail-qty]');
+      if (detailQty) {
+        detailQuantity = Math.max(1, Math.min(99, detailQuantity + Number(detailQty.dataset.detailQty)));
+        document.getElementById('detailQuantity').textContent = detailQuantity;
+        document.getElementById('detailMinus').disabled = detailQuantity === 1;
+        document.getElementById('detailPlus').disabled = detailQuantity === 99;
+      }
+
+      const policy = event.target.closest('[data-policy]');
+      if (policy) openPolicy(policy.dataset.policy);
+
+      const review = event.target.closest('[data-review]');
+      if (review) openReview(review.dataset.review);
+
+      if (event.target.closest('#checkoutButton')) openCheckout();
+
+      if (event.target.closest('#emptyShop')) {
+        document.getElementById('cartDialog').close();
+        document.getElementById('best-sellers').scrollIntoView({behavior:'smooth'});
+      }
+      if (event.target.closest('[data-menu-close]')) document.getElementById('menuDialog').close();
+      if (event.target.closest('#resetSearch')) {
+        document.getElementById('searchInput').value = '';
+        document.getElementById('searchMeta').textContent = 'All our considered finds';
+        document.getElementById('searchResults').innerHTML = products.map(p => `<a href="#product/${p.id}" class="search-result"><span class="search-thumb"><img src="${imageURL(p.image, 200)}" alt=""></span><span><strong>${p.name}</strong><small>${p.categoryName}</small></span><span>${money(p.price)}</span></a>`).join('');
+      }
+    });
+
+    document.getElementById('newsletterForm').addEventListener('submit', event => {
+      event.preventDefault();
+      document.getElementById('newsletterStatus').textContent = 'This is a preview — your email hasn’t been subscribed, sent, or saved. Come back when we launch.';
+      event.target.reset();
+    });
+
+    document.addEventListener('keydown', event => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        openSearch();
+      }
+    });
+
+    function route() {
+      if (location.hash.startsWith('#product/')) {
+        const id = location.hash.substring(9);
+        if (productById(id)) openProduct(id);
+        else showToast('That product isn’t in this edit. Explore the collection below.');
+      } else if (document.getElementById('productDialog').open) {
+        document.getElementById('productDialog').close();
+      }
+    }
+    window.addEventListener('hashchange', route);
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderProducts();
+    renderCart();
+    route();
+  </script>
+</body>
+</html>
